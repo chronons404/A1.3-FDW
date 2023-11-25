@@ -10,7 +10,7 @@ function enviarOrcamento(){
     let data = document.getElementById('dateInput').value;
     let obs = document.getElementById('Textarea1').value;
 
-    url = `back/cadastrar_orcamento.php?nome=${nome}&email=${email}&celular=${celular}&endereco=${endereco}&complemento=${complemento}&cidade=${cidade}&estado=${estado}&cep=${cep}&data=${data}&obs=${obs}`
+    let url = `back/cadastrar_orcamento.php?nome=${nome}&email=${email}&celular=${celular}&endereco=${endereco}&complemento=${complemento}&cidade=${cidade}&estado=${estado}&cep=${cep}&data=${data}&obs=${obs}`
 
     let req = new XMLHttpRequest();
     req.open('GET', url, false);
