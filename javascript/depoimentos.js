@@ -3,7 +3,7 @@ function enviarDepoimento(){
     let idade = document.getElementById('idade').value;
     let depoimento = document.getElementById('depoimento').value;
 
-    url = `back/enviar_depoimento.php?nome=${nome}&idade=${idade}&depoimento=${depoimento}`;
+    let url = `back/enviar_depoimento.php?nome=${nome}&idade=${idade}&depoimento=${depoimento}`;
 
     let req = new XMLHttpRequest();
     req.open('GET', url, false);
